@@ -1,0 +1,16 @@
+@mixin grid ($prop1, $prop2, $prop3) {
+    flex-basis: $prop1;
+    flex-grow: $prop2;
+    flex-shrink: $prop3;
+}
+
+@mixin lilgrid($prop) {
+    flex-basis: $prop;
+}
+
+@mixin includegrid($prop1, $prop2, $prop3) {
+    flex-basis: $prop1;
+    flex-grow: $prop2;
+    flex-shrink: $prop3;
+    @content;
+}
